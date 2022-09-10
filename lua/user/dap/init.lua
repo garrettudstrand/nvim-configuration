@@ -1,4 +1,4 @@
-require "user.dap.dapui"
+require("user.dap.dapui")
 
 local dap_status_ok, dap = pcall(require, "dap")
 if not dap_status_ok then
@@ -11,13 +11,13 @@ if not dap_ui_status_ok then
 end
 
 dap.listeners.after.event_initialized["dapui_config"] = function()
-  dapui.open()
+	dapui.open()
 end
 dap.listeners.before.event_terminated["dapui_config"] = function()
-  dapui.close()
+	dapui.close()
 end
 dap.listeners.before.event_exited["dapui_config"] = function()
-  dapui.close()
+	dapui.close()
 end
 
 local path = require("mason-core.path")

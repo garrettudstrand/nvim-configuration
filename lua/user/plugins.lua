@@ -44,7 +44,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used by lots of plugins
-	use("folke/tokyonight.nvim") -- My color scheme - it's pretty popular
+	use({ "catppuccin/nvim", as = "catppuccin" }) -- Catppuccin colorscheme
 
 	-- Completion(autocomplete) plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -76,6 +76,7 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	})
+	use("p00f/nvim-ts-rainbow") -- add rainbow colors to parantheses
 
 	-- nvim-tree - a nicer file tree replacement for netrw
 	use("kyazdani42/nvim-web-devicons") -- the icons it uses
@@ -106,6 +107,7 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim") -- improve package loading time on startup
 	use("lukas-reineke/indent-blankline.nvim") -- add indent lines to neovim
 	use("antoinemadec/FixCursorHold.nvim") -- fix performance on CursorHold events
+	use("simrat39/symbols-outline.nvim") -- show symbols in a file
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

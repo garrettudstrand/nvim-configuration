@@ -133,13 +133,12 @@ local mappings = {
 	l = {
 		name = "LSP",
 		a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
-		c = { "<cmd>TroubleClose<cr>", "Close Diagnostic Window" },
 		d = {
-			"<cmd>Trouble document_diagnostics<cr>",
+			"<cmd>TroubleToggle document_diagnostics<cr>",
 			"Document Diagnostics",
 		},
 		w = {
-			"<cmd>Trouble workspace_diagnostics<cr>",
+			"<cmd>TroubleToggle workspace_diagnostics<cr>",
 			"Workspace Diagnostics",
 		},
 		f = { "<cmd>lua vim.lsp.buf.formatting()<cr>", "Format" },
@@ -156,11 +155,13 @@ local mappings = {
 		m = { "<cmd>Mason<cr>", "Mason (Insall LSPs)" },
 		q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
 		r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+		R = { "<cmd>Trouble lsp_references<cr>", "References" },
 		s = { "<cmd>Telescope lsp_document_symbols<cr>", "Document Symbols" },
 		S = {
 			"<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
 			"Workspace Symbols",
 		},
+		o = { "<cmd>SymbolsOutline<cr>", "Toggle Symbols Outline" },
 	},
 
 	d = {

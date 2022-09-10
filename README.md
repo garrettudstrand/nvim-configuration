@@ -45,8 +45,9 @@ the neovim stuff you know and love.
   [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim) are common
   dependencies of other plugins
 
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim) is the
-  colorscheme used in the configuration
+- [catppuccin/nvim](https://github.com/catppuccin/nvim) is the colorscheme used
+  in the configuration, which has also been setup to use its integrations with
+  many of the other plugins installed
 
 - [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp) is what provides
   completions while you're typing
@@ -130,6 +131,9 @@ the neovim stuff you know and love.
   parses files and uses that parsing information to provide a bunch of cool
   features. The main one we use is superior syntax highlighting
 
+- [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) is an
+  extension to treesitter that gives nested parantheses different colors
+
 - [kyazdani42/nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
   is a set of cool icons to use in neovim. This is used by a lot of plugins, but
   most notably
@@ -197,6 +201,9 @@ the neovim stuff you know and love.
   fixes the performance of CursorHold events, which are used in some of the
   plugins
 
+- [simrat39/symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim)
+  allows you to pull open a treelike view of symbols in a file
+
 # Dependencies
 
 If you ever want to see if you are missing any dependencies, run `:checkhealth`
@@ -214,9 +221,8 @@ If you ever want to see if you are missing any dependencies, run `:checkhealth`
 
   - [JohnnyMorganz/StyLua](https://github.com/JohnnyMorganz/StyLua) is installed
     for Lua formatting
-  - [igorshubovych/markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
-    (listed as `markdownlint` in Mason) is installed for markdown formatting,
-    but may be setup to dop markdown linting in the future
+  - [prettier/prettier](https://github.com/prettier/prettier) is installed for
+    markdown files, but is able to handle a large number of different file types
 
 - [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) is used by
   [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
