@@ -83,7 +83,7 @@ local mappings = {
 	["a"] = { "<cmd>Alpha<cr>", "Alpha" },
 	["e"] = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
 	["q"] = { "<cmd>q!<CR>", "Quit" },
-	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+	["c"] = { "<cmd>BufferClose<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
 
 	f = {
@@ -155,7 +155,7 @@ local mappings = {
 		m = { "<cmd>Mason<cr>", "Mason (Insall LSPs)" },
 		q = { "<cmd>lua vim.lsp.diagnostic.set_loclist()<cr>", "Quickfix" },
 		r = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
-		R = { "<cmd>Trouble lsp_references<cr>", "References" },
+		R = { "<cmd>TroubleToggle lsp_references<cr>", "References" },
 		s = { "<cmd>SymbolsOutline<cr>", "Toggle Symbols Outline" },
 	},
 

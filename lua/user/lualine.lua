@@ -33,7 +33,7 @@ local branch = {
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
+		theme = "catppuccin",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
@@ -46,7 +46,7 @@ lualine.setup({
 			"dapui_breakpoints",
 			"dapui_scopes",
 			"dapui_stacks",
-      "dapui_watches",
+			"dapui_watches",
 		},
 		always_divide_middle = true,
 	},

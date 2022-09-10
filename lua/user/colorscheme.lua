@@ -36,13 +36,13 @@ catppuccin.setup({
 	integrations = {
 		-- For various plugins integrations see https://github.com/catppuccin/nvim#integrations
 		aerial = false,
-		barbar = false,
+		barbar = true,
 		beacon = false,
 		cmp = true,
 		coc_nvim = false,
-		dashboard = true,
+		dashboard = false,
 		fern = false,
-		fidget = false,
+		fidget = true,
 		gitgutter = false,
 		gitsigns = true,
 		hop = false,
@@ -66,6 +66,27 @@ catppuccin.setup({
 		vim_sneak = false,
 		vimwiki = false,
 		which_key = true,
+
+		indent_blankline = {
+			enabled = true,
+			colored_indent_levels = false,
+		},
+
+		native_lsp = {
+			enabled = true,
+			virtual_text = {
+				errors = { "italic" },
+				hints = { "italic" },
+				warnings = { "italic" },
+				information = { "italic" },
+			},
+			underlines = {
+				errors = { "underline" },
+				hints = { "underline" },
+				warnings = { "underline" },
+				information = { "underline" },
+			},
+		},
 	},
 	color_overrides = {},
 	highlight_overrides = {},

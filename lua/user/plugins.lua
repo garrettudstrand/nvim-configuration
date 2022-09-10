@@ -66,6 +66,7 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("jose-elias-alvarez/null-ls.nvim") -- null-ls - formatting and style linting
 	use("folke/trouble.nvim") -- Make it easier to read through diagnostics
+	use("j-hui/fidget.nvim") -- Show loading information on LSP
 
 	-- Telescope - our fuzzy finder search thing
 	use("nvim-telescope/telescope.nvim")
@@ -101,8 +102,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs") -- if you insert an open parantheses, add the closed one, works with CMP and Treesitter
 	use("numToStr/Comment.nvim") -- easily comment stuff by hitting gc
 	use("JoosepAlviste/nvim-ts-context-commentstring") -- fancier commenting. It can figure out if something is, like, JSX. Works with Treesitter
-	use("akinsho/bufferline.nvim") -- A tabline like thing for buffers
-	use("moll/vim-bbye") -- allows you to close bufferrs without closing windows or messing up layout
+	use("romgrk/barbar.nvim") -- Tabline for buffers
 	use("nvim-lualine/lualine.nvim") -- statusline plugin
 	use("lewis6991/impatient.nvim") -- improve package loading time on startup
 	use("lukas-reineke/indent-blankline.nvim") -- add indent lines to neovim

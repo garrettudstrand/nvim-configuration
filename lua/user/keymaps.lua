@@ -1,16 +1,16 @@
 local function opts(desc)
-  return {
-    noremap = true,
-    silent = true,
-    desc = desc,
-  }
+	return {
+		noremap = true,
+		silent = true,
+		desc = desc,
+	}
 end
 
 local function term_opts(desc)
-  return {
-    silent = true,
-    desc = desc,
-  }
+	return {
+		silent = true,
+		desc = desc,
+	}
 end
 
 -- Shorten function name
@@ -46,13 +46,13 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts("Increase height of wind
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts("Decrease height of window"))
 
 -- Navigate buffers
-keymap("n", "<tab>", ":bnext<CR>", opts("Go to next buffer"))
-keymap("n", "<S-tab>", ":bprevious<CR>", opts("Go to previous buffer"))
+keymap("n", "<tab>", ":BufferNext<CR>", opts("Go to next buffer"))
+keymap("n", "<S-tab>", ":BufferPrevious<CR>", opts("Go to previous buffer"))
 
 -- Save with ctrl-s when in normal mode and insert mode
 -- TODO: maybe remove thse because they are a bit weird, but IDK
-keymap("n", "<C-s>", ':w<CR>', opts("Save"))
-keymap("i", "<C-s>", '<ESC>:w<CR>a', opts("Save"))
+keymap("n", "<C-s>", ":w<CR>", opts("Save"))
+keymap("i", "<C-s>", "<ESC>:w<CR>a", opts("Save"))
 
 -- Visual --
 -- Stay in indent mode

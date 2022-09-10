@@ -116,6 +116,9 @@ the neovim stuff you know and love.
 - [folke/trouble.nvim](https://github.com/folke/trouble.nvim) allows us to open
   a prety list for diagnostics, references, telescope lists, whatever else
 
+- [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim) displays what the
+  LSP server is doing in the bottom right corner and when it is finished
+
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
   is a fuzzy finder that we use for basically any list that needs to be searched
   through
@@ -182,11 +185,8 @@ the neovim stuff you know and love.
   [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim) smarter (it
   will comment out JSX properly in a React file, for example)
 
-- [akinsho/bufferline.nvim](https://github.com/akinsho/bufferline.nvim) displays
-  buffers as a list of tabs, so you can more easily go through them
-
-- [moll/vim-bbye](https://github.com/moll/vim-bbye) allows you to close buffers
-  without messing up your layout or deleting windows
+- [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim) to display buffers
+  as tabs
 
 - [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
   makes the statusline look a lot fancier and adds useful information to it
